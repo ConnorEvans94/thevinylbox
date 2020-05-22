@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 16px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 105px;
+    background-color: rgb(92, 92, 92);
+}
+.logo {
+    width: auto;
+    height: 70%;
+    margin: 0.4rem 0 0 0.4rem;
+    border: rgb(255, 128, 24) solid 2px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0.6rem 0.4rem 0.55rem 0.4rem;
+}
+.logo h6 {
+    font-size: 2rem;
+    font-family: monospace;
+    color: white;
+}
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav p {
+    margin: 2rem 3rem 0 0;
+    font-size: 1.75rem;
+    font-family: monospace;
+    text-decoration: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.nav i {
+    margin: 2rem 3rem 0 0;
+    color: rgb(255, 128, 24);
+}
+@media only screen and (max-width: 330px) {
+    .nav i {
+        display: none;
+    }
+    .nav p {
+        margin: 2rem 1rem 0 1rem;
+    }
+    a {
+        color: rgb(255, 128, 24);
+    }
+    .logo {
+        margin: 0.3rem;
+    }
+}
+.image {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin: 8rem 0 4rem 0;
+}
+img {
+    width: 25%;
+    height: auto;
+    min-width: 250px;
+    padding: 1rem;
+    background-color:rgb(92, 92, 92);
+    border: rgb(255, 128, 24) solid 4px;
+}
+.bigimage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.large {
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+    background-color:rgb(92, 92, 92);
+    border: rgb(255, 128, 24) solid 4px;
+    transition: transform 2s;
+}
+.large:hover {
+    transform: scale(1.8);
+}
+.text {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+h4 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+.underline {
+    text-decoration: underline;
+}
+.text p {
+    text-align: center;
+    padding: 0 14rem;
+    margin-bottom: 8rem;
+}
+.footer {
+    background-color: rgb(92, 92, 92);
+    text-align: center;
+    width: 100%;
+    height: 85px;
+    display: block;
+}
+.insta i {
+    color: rgb(255, 128, 24);
+    padding-top: 1.5rem;
+    text-align: center;
+}
+.year p {
+    text-align: right;
+    color: white;
+    margin-right: 1rem;
+}
