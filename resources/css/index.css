@@ -9,20 +9,22 @@ html {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 75px;
+    height: 105px;
+    background-color: rgb(92, 92, 92);
 }
 .logo {
     width: auto;
-    height: 100%;
-    margin: 0.5rem 0 0 0.5rem;
-    border: crimson solid 2px;
+    height: 70%;
+    margin: 0.4rem 0 0 0.4rem;
+    border: rgb(255, 128, 24) solid 2px;
     font-size: 1rem;
     line-height: 1.5rem;
-    padding: 0.7rem 0.5rem;
+    padding: 0.6rem 0.4rem 0.55rem 0.4rem;
 }
 .logo h6 {
     font-size: 2rem;
     font-family: monospace;
+    color: white;
 }
 .nav {
     display: flex;
@@ -35,29 +37,93 @@ html {
     text-decoration: none;
 }
 a {
-    color: crimson;
+    color: white;
     text-decoration: none;
 }
 .nav i {
     margin: 2rem 3rem 0 0;
-    color: black;
+    color: rgb(255, 128, 24);
 }
 @media only screen and (max-width: 330px) {
     .nav i {
         display: none;
     }
     .nav p {
-        margin: 2.5rem 1rem 0 1rem;
+        margin: 2rem 1rem 0 1rem;
     }
     a {
-        color: black;
+        color: rgb(255, 128, 24);
     }
     .logo {
-        margin: 1rem;
+        margin: 0.3rem;
     }
 }
-.banner h1 {
-    font-size: 7rem;
+.first {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 8rem 0;
+    background-color: white;
+}
+img {
+    width: 25%;
+    height: auto;
+    min-width: 250px;
+    padding: 1rem;
+    background-color:rgb(92, 92, 92);
+    border: rgb(255, 128, 24) solid 4px;
+}
+.zoom {
+    transition: transform 1s;
+}
+.zoom:hover {
+    transform: scale(1.2);
+}
+@media only screen and (max-width: 620px) {
+    .first {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin: 2rem 0 0 0;
+        padding: 0;
+    }
+    img {
+        width: 50%;
+        height: auto;
+        min-width: 200px;
+        margin: 2rem;
+    }
+    .second {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+.second {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4rem;
+    background-color: white;
+}
+.footer {
+    background-color: rgb(92, 92, 92);
     text-align: center;
-    font-family: Helvetica, sans-serif;
+    width: 100%;
+    height: 85px;
+    display: block;
+}
+.insta i {
+    color: rgb(255, 128, 24);
+    padding-top: 1.5rem;
+    text-align: center;
+}
+.year p {
+    text-align: right;
+    color: white;
+    margin-right: 1rem;
 }
