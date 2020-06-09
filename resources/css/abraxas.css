@@ -36,7 +36,7 @@ html {
     font-family: monospace;
     text-decoration: none;
 }
-.instagram {
+a {
     color: white;
     text-decoration: none;
 }
@@ -51,25 +51,19 @@ html {
     .nav p {
         margin: 2rem 1rem 0 1rem;
     }
-    .instagram {
+    a {
         color: rgb(255, 128, 24);
     }
     .logo {
         margin: 0.3rem;
     }
 }
-a {
-    margin: 0;
-    padding: 0;
-    width: 25%;
-}
-.toprow {
+.image {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     height: auto;
-    margin: 8rem 0rem;
-    background-color: white;
+    margin: 8rem 0 4rem 0;
 }
 img {
     width: 25%;
@@ -79,44 +73,39 @@ img {
     background-color:rgb(92, 92, 92);
     border: rgb(255, 128, 24) solid 4px;
 }
-.zoom {
-    transition: transform 1s;
-}
-.zoom:hover {
-    transform: scale(1.2);
-}
-@media only screen and (max-width: 720px) {
-    .toprow {
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        margin: 2rem 0 0 0;
-        padding: 0;
-    }
-    img {
-        width: 50%;
-        height: auto;
-        min-width: 200px;
-        margin: 2rem;
-    }
-    .secondrow {
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    .zoom:hover {
-        transform: none;
-    }
-}
-.secondrow {
-    display: flex;
-    justify-content: space-evenly;
+.bigimage {
     width: 100%;
     height: auto;
-    padding-bottom: 4rem;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.large {
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+    background-color:rgb(92, 92, 92);
+    border: rgb(255, 128, 24) solid 4px;
+    transition: transform 2s;
+}
+.large:hover {
+    transform: scale(1.8);
+}
+.text {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+h4 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+.underline {
+    text-decoration: underline;
+}
+.text p {
+    text-align: center;
+    padding: 0 14rem;
+    margin-bottom: 8rem;
 }
 .footer {
     background-color: rgb(92, 92, 92);
